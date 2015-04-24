@@ -12,9 +12,9 @@
 
 
 import os
+import select
 import socket
 import struct
-import select
 import time
 
 # From /usr/include/linux/icmp.h; your milage may vary.
