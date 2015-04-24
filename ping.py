@@ -111,7 +111,7 @@ def do_one(dest_addr, timeout):
     """
     icmp = socket.getprotobyname("icmp")
     try:
-        my_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp)
+        my_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, icmp)
     except socket.error, (errno, msg):
         if errno == 1:
             # Operation not permitted
